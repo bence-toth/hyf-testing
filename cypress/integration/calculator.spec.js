@@ -70,4 +70,19 @@ describe('Calculator', () => {
       .contains(-20)
       .should('exist')
   })
+
+  it('Calculation works on a mobile screen as well', () => {
+    cy.viewport(320, 760);
+    cy.get("[data-testid=number1]")
+      .should('exist')
+      .clear()
+      .type(10)
+    cy.get("[data-testid=number2]")
+      .should('exist')
+      .clear()
+      .type(-30)
+    cy.get("[data-testid=sum]")
+      .contains(-20)
+      .should('exist')
+  })
 })
