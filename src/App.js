@@ -6,6 +6,8 @@ const App = () => {
   const sum = numberOne + numberTwo;
   return (
     <div className="App">
+      <h1>Calculator</h1>
+      <h2>Add two numbers here</h2>
       <input
         type="number"
         value={numberOne}
