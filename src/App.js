@@ -13,21 +13,24 @@ const App = () => {
       <h1>Calculator</h1>
       <h2>Add two numbers here</h2>
       <input
+        data-testid="number1"
         type="number"
         value={numberOne}
         onChange={(e) => {
-          setNumberOne(e.target.value);
+          setNumberOne(+e.target.value);
         }}
       />
       +
       <input
+        data-testid="number2"
         type="number"
         value={numberTwo}
         onChange={(e) => {
-          setNumberTwo(e.target.value);
+          setNumberTwo(+e.target.value);
         }}
       />
-      ={sum}
+      =
+      <span data-testid="sum">{sum}</span>
     </div>
   );
 };
