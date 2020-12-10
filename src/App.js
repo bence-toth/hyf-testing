@@ -10,7 +10,7 @@ const App = () => {
   const sum = addTwoNumbers(numberOne, numberTwo);
   return (
     <div className="App">
-      <h1>Calculator</h1>
+      <h1>Calculatypo</h1>
       <h2>Add two numbers here</h2>
       <input
         data-testid="number1"
