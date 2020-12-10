@@ -1,9 +1,13 @@
 import { useState } from "react";
 
+const addTwoNumbers = (numberOne, numberTwo) => {
+  return numberOne + numberTwo;
+}
+
 const App = () => {
   const [numberOne, setNumberOne] = useState(0);
   const [numberTwo, setNumberTwo] = useState(0);
-  const sum = numberOne + numberTwo;
+  const sum = addTwoNumbers(numberOne, numberTwo);
   return (
     <div className="App">
       <h1>Calculator</h1>
@@ -29,3 +33,5 @@ const App = () => {
 };
 
 export default App;
+
+export {addTwoNumbers};
