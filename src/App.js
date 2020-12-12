@@ -12,6 +12,7 @@ const App = () => {
     <div className="App">
       <h1>Calculator</h1>
       <h2>Add two numbers here</h2>
+      <h3>This a simple calculator</h3>
       <input
         data-testid="number1"
         type="number"
