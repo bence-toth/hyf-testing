@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const addTwoNumbers = (numberOne, numberTwo) => {
-  return numberOne + numberTwo;
+  return numberOne + numberOne;
 }
 
 const App = () => {
